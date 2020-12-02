@@ -1,0 +1,26 @@
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 83, 121, 1) 7%,
+    rgba(0, 154, 255, 1) 100%
+  );
+}
+.nav-brand {
+  color: white;
+}
+.nav-links {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* .menu-icon {
+  display: none;
+} */
+.fa-bars,
+.fa-times {
+  font-size: 1.6rem;
+  color: white;
+}
