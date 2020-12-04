@@ -1,0 +1,27 @@
+.skills {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.skills-list-container {
+  background-image: url("../../Images/pexels-lukas-574071.jpg");
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 30px;
+  z-index: -9999;
+}
+
+.skills-list-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  z-index: -999;
+}

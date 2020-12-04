@@ -1,0 +1,20 @@
+.project-type-heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.project-type-heading span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 0px 20px;
+  background-color: rgb(105, 105, 224);
+  padding: 15px;
+  cursor: pointer;
+}
+span.active {
+  background-color: #f16a70;
+}
+/* .hello {
+  background-color: blue;
+} */
