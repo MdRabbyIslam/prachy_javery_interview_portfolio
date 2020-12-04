@@ -12,6 +12,7 @@ const Projects = () => {
     setProjectGroup({ value: projectGroupName });
   };
   console.log(projectGroup.value);
+  const groupNames = ["Mern", "React", "Html & CSS", "JavaScript", "All"];
 
   return (
     <section id="projects">
@@ -20,44 +21,18 @@ const Projects = () => {
       <div className="triangle-down"></div>
       <div className="projects-type">
         <h2 onClick={showingProject} className="project-type-heading">
-          {/* <div style={isMarginNeeded ? {marginTop:10} : {}} />  */}
-
-          <span
-            className={classNames({
-              active: projectGroup.value === "Mern",
-            })}
-          >
-            Mern
-          </span>
-          <span
-            className={classNames({
-              active: projectGroup.value === "React",
-            })}
-          >
-            React
-          </span>
-          <span
-            className={classNames({
-              active: projectGroup.value === "Html & CSS",
-            })}
-          >
-            Html & CSS
-          </span>
-          <span
-            className={classNames({
-              active: projectGroup.value === "JavaScript",
-            })}
-          >
-            JavaScript
-          </span>
-          <span
-            className={classNames({
-              active: projectGroup.value === "All",
-            })}
-          >
-            All
-          </span>
+          {groupNames.map((group) => (
+            <span
+              className={classNames({
+                active: projectGroup.value === group,
+              })}
+              key={groupNames.indexOf(group)}
+            >
+              {group}
+            </span>
+          ))}
         </h2>
+        <h2>Here will I add my projects</h2>
       </div>
       <div className="projects"></div>
     </section>
